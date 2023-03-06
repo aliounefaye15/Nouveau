@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    background-color: rgb(177, 168, 168);
+}
+.title h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+    color:chocolate;
+}
+.title h7{
+    padding: 65px;
+}
+.title h1::after{
+    content: "";
+    height: 3px;
+    width: 45%;
+    background-color: rgb(30, 168, 210);
+    display: block;
+    margin: auto;
+}
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+.card:hover{
+    background-color: chocolate;
+  
+}
+
+
+.activite{
+    width: 75%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+    
+}
+.card1:hover{
+    background-color: chocolate;
+    height: 155px;
+}
+.activite .icon{
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #0ebdd4;
+}
+.card .icon{
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #0ebdd4;
+}
+/* max-width, si l'ecran est inf ou egal alors {...} */
+/* max-width = desktop-first*/
+@media screen and (max-width: 425px) {
+    .title h1{
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+    }
+    .services{
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+    }
+ }
+ @media screen and (max-width: 768px) {
+     .activite{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+     }
+  }
